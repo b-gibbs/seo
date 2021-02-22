@@ -10,22 +10,27 @@ export default function Home() {
         canonical="https://www.canonicalurl.ie/"
         openGraph={{
           url: "https://www.canonicalurl.ie/",
-          title: "Open Graph Title",
-          description: "Open Graph Description",
+          title: "The Fraggles",
+          description: "*LOUD* *EXPLOSIONS*",
           images: [
             {
-              url: "https://www.example.ie/og-image-01.jpg",
+              url:
+                "https://configcdkstack-gpbucketc7c11d3d-qtgzc43jqi2c.s3.us-east-2.amazonaws.com/photo_1041-1612552833729.webp",
               width: 800,
               height: 600,
               alt: "Og Image Alt"
             },
             {
-              url: "https://www.example.ie/og-image-02.jpg",
+              url:
+                "https://configcdkstack-gpbucketc7c11d3d-qtgzc43jqi2c.s3.us-east-2.amazonaws.com/photo_1042-1612553082805.webp",
               width: 900,
               height: 800,
               alt: "Og Image Alt Second"
             },
-            { url: "https://www.example.ie/og-image-03.jpg" },
+            {
+              url:
+                "https://configcdkstack-gpbucketc7c11d3d-qtgzc43jqi2c.s3.us-east-2.amazonaws.com/cover_test-1612906617518.webp"
+            },
             { url: "https://www.example.ie/og-image-04.jpg" }
           ]
         }}
