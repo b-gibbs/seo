@@ -1,41 +1,38 @@
 import Link from "next/link";
 import { NextSeo } from "next-seo";
 
-const Layout = ({ title = "Can I do this?", children }) => {
+const AdminLayout = ({ title = "This might work?", children }) => {
   console.log(title);
-  title = "Fraggles Rock!";
+  title = "Muppets Rock!";
   console.log(title);
   return (
     <>
       <NextSeo
-        title="Layout title"
-        description="Layout description"
+        title="Admin Layout title"
+        description="Admin Layout description"
         openGraph={{
           images: [
             {
               url:
-                "https://configcdkstack-gpbucketc7c11d3d-qtgzc43jqi2c.s3.us-east-2.amazonaws.com/photo_1047-1612554843501.webp"
+                "https://configcdkstack-gpbucketc7c11d3d-qtgzc43jqi2c.s3.us-east-2.amazonaws.com/photo_1056-1612556732503.webp"
             }
           ]
         }}
       />
       <ul>
         <div display="flex" flexdirection="row">
-          <Link href="/">
+          <Link href="/admin/">
             <li>Home</li>
           </Link>
 
-          <Link href="/test">
+          <Link href="/admin/test">
             <li>Test</li>
           </Link>
-          <Link href="/trial">
+          <Link href="/admin/trial">
             <li>Trial</li>
           </Link>
-          <Link href="/layout-trial">
+          <Link href="/admin/layout-trial">
             <li>Layout Trial</li>
-          </Link>
-          <Link href="/jsonld">
-            <li>JSON-LD</li>
           </Link>
         </div>
       </ul>
@@ -44,4 +41,4 @@ const Layout = ({ title = "Can I do this?", children }) => {
   );
 };
 
-export default Layout;
+export default AdminLayout;
