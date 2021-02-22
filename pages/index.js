@@ -8,6 +8,9 @@ export default function Home() {
         title="Fraggle Rock Title"
         description="This will be the Fraggle Rock Explosion"
         canonical="https://www.canonicalurl.ie/"
+        twitter={{
+          site: "https://orange-nation.com"
+        }}
         openGraph={{
           url: "https://www.canonicalurl.ie/",
           title: "The Fraggles",
