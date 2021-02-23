@@ -6,7 +6,7 @@ import { Provider as AuthProvider } from "next-auth/client";
 import { Provider as BumbagProvider, ToastManager } from "bumbag";
 
 import Layout from "../components/Layout";
-import CarouselLayout from "../components/CarouselLayout";
+import AdminLayout from "../components/AdminLayout";
 import gpTheme from "../gp-theme";
 
 const App = ({ Component, pageProps }: AppProps): JSX.Element => {
@@ -19,10 +19,10 @@ const App = ({ Component, pageProps }: AppProps): JSX.Element => {
       <ApolloProvider client={apolloClient}>
         <AuthProvider session={pageProps.session}>
           <BumbagProvider isSSR colorMode="dark" theme={gpTheme}>
-            {router.pathname.startsWith(`/carousel/`) ? (
-              <CarouselLayout>
+            {router.pathname.startsWith(`/admin/`) ? (
+              <AdminLayout>
                 <Component {...pageProps} />
-              </CarouselLayout>
+              </AdminLayout>
             ) : (
               <Layout>
                 <Component {...pageProps} />
