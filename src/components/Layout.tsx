@@ -17,7 +17,7 @@ const Layout: React.FC<{ title?: string }> = ({
 }) => {
   console.log(title);
 
-  if (typeof window === "undefined") return null;
+  // if (typeof window === "undefined") return null;
 
   return (
     <>
